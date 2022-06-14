@@ -187,3 +187,15 @@
     margin-right: 5%;
   }
 }
+
+[role=region] {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  color-scheme: light;
+}
