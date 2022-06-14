@@ -8,13 +8,13 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'React Chat Elements',
   tagline: 'React Chat Elements',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://detaysoft.github.io',
+  baseUrl: '/docs-react-chat-elements/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo-ico.ico',
-  organizationName: 'detaysoft', // Usually your GitHub org/user name.
-  projectName: 'react-chat-elements', // Usually your repo name.
+  organizationName: 'Detaysoft', // Usually your GitHub org/user name.
+  projectName: 'docs-react-chat-elements', // Usually your repo name.
 
   presets: [
     [
