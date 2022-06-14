@@ -74,7 +74,7 @@ const Demo = () => {
       <div className={styles.leftDivContainer}>
         <div className={styles.infoDivContainer}>
           <div className={styles.infoContentDiv}>
-            <a href='/' className={styles.infoLogo}>
+            <a href='/docs-react-chat-elements/' className={styles.infoLogo}>
               <img src={logo} alt="logo" />
             </a>
             <a href='https://detaysoft.com/' className={styles.infoLogo}>
