@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react'
-import styles from './index.module.css'
+import styles from './styles.module.css'
 import { ChatList } from "react-chat-elements"
 import { BsFillChatFill } from 'react-icons/bs'
 import { AiFillVideoCamera } from 'react-icons/ai'
-import MessageList from '../components/MessageList'
-import MeetingSide from '../components/MeetingSide'
-import logo from '../../static/img/logo.png'
-import detayLogo from '../../static/img/detay-logo.png'
-import githubLogo from '../../static/img/github-logo.png'
-import npmLogo from '../../static/img/npm-logo.png'
+import MessageList from '../../components/MessageList'
+import MeetingSide from '../../components/MeetingSide'
+import logo from '../../../static/img/logo.png'
+import detayLogo from '../../../static/img/detay-logo.png'
+import githubLogo from '../../../static/img/github-logo.png'
+import npmLogo from '../../../static/img/npm-logo.png'
 
 const Demo = () => {
   const [unreadKursat, setUnreadKursat] = useState(0)
@@ -70,7 +70,7 @@ const Demo = () => {
   }, [chatInfo])
 
   return (
-    <div className={styles.demoContainer} >
+    <div className={styles.demoContainer}>
       <div className={styles.leftDivContainer}>
         <div className={styles.infoDivContainer}>
           <div className={styles.infoContentDiv}>

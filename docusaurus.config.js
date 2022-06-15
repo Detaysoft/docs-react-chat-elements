@@ -50,7 +50,7 @@ const config = {
             position: 'left',
             label: 'Tutorial',
           },
-          {to: '/demo', label: 'Live Demo', position: 'left'},
+          {to: '/demo/', label: 'Live Demo', position: 'left'},
           {
             href: 'https://github.com/Detaysoft/react-chat-elements',
             label: 'GitHub',

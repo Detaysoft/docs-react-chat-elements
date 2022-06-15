@@ -22,9 +22,9 @@ const ExampleMeetingMessageComp = () => {
       [
         {
           id: '1',
-          avatar: 'https://avatars.githubusercontent.com/u/19151996?s=200&v=4',
-          message: "Let's start the daily !",
-          title: 'Daily Meeting',
+          avatar: 'https://avatars.githubusercontent.com/u/80540635?v=4',
+          message: "Junior Developer",
+          title: 'Kursat',
           avatarFlexible: true,
           date: new Date(),
         }

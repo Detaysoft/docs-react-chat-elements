@@ -30,19 +30,23 @@ Message announcing the meetings can be defined.
           id: '1',
           title: 'Emre'
         },
-        {
-          id: '1',
-          title: 'Esra'
-        }
       ]
     }
     dataSource={
       [
         {
           id: '1',
-          avatar: 'https://avatars.githubusercontent.com/u/19151996?s=200&v=4',
-          message: 'Detaysoft',
-          title: 'Daily 4 Jun',
+          avatar: 'https://avatars.githubusercontent.com/u/41473129?v=4',
+          message: 'Team Lead',
+          title: 'Emre',
+          avatarFlexible: true,
+          date: new Date(),
+        },
+        {
+          id: '2',
+          avatar: 'https://avatars.githubusercontent.com/u/80540635?v=4',
+          message: 'Junior Developer',
+          title: 'Kursat',
           avatarFlexible: true,
           date: new Date(),
         }
@@ -67,11 +71,11 @@ import { MeetingMessage } from "react-chat-elements"
     [
       {
         id: '1',
-        title: 'Kursat'
+        title: 'Esra'
       },
       {
         id: '2',
-        title: 'Emre'
+        title: 'Abdurrahman'
       },
     ]
   }
@@ -79,9 +83,17 @@ import { MeetingMessage } from "react-chat-elements"
     [
       {
         id: '1',
-        avatar: 'https://avatars.githubusercontent.com/u/19151996?s=200&v=4',
-        message: "Let's start the daily !",
-        title: 'Daily Routine',
+        avatar: 'https://avatars.githubusercontent.com/u/53093667?s=100&v=4',
+        message: "Frontend Developer",
+        title: 'Esra',
+        avatarFlexible: true,
+        date: new Date(),
+      },
+      {
+        id: '1',
+        avatar: 'https://avatars.githubusercontent.com/u/15075759?v=4',
+        message: "Solution Architect",
+        title: 'Abdurrahman',
         avatarFlexible: true,
         date: new Date(),
       }
@@ -92,7 +104,7 @@ import { MeetingMessage } from "react-chat-elements"
 
 **Result**
 
-<div style={{ color:"black"}}>
+<div style={{ color:"black", margin:"50px 0px"}}>
   <MeetingMessage
     subject="Example Meeting Message"
     title="Meeting Message"
@@ -103,11 +115,11 @@ import { MeetingMessage } from "react-chat-elements"
       [
         {
           id: '1',
-          title: 'Kursat'
+          title: 'Esra'
         },
         {
           id: '2',
-          title: 'Emre'
+          title: 'Abdurrahman'
         },
       ]
     }
@@ -115,9 +127,17 @@ import { MeetingMessage } from "react-chat-elements"
       [
         {
           id: '1',
-          avatar: 'https://avatars.githubusercontent.com/u/19151996?s=200&v=4',
-          message: "Let's start the daily !",
-          title: 'Daily Routine',
+          avatar: 'https://avatars.githubusercontent.com/u/53093667?s=100&v=4',
+          message: "Frontend Developer",
+          title: 'Esra',
+          avatarFlexible: true,
+          date: new Date(),
+        },
+        {
+          id: '1',
+          avatar: 'https://avatars.githubusercontent.com/u/15075759?v=4',
+          message: "Solution Architect",
+          title: 'Abdurrahman',
           avatarFlexible: true,
           date: new Date(),
         }
@@ -149,9 +169,9 @@ const meetingData = {
     [
       {
         id: '1',
-        avatar: 'https://avatars.githubusercontent.com/u/19151996?s=200&v=4',
-        message: "Let's start the daily !",
-        title: 'Daily Meeting',
+        avatar: 'https://avatars.githubusercontent.com/u/80540635?v=4',
+        message: "Junior Developer",
+        title: 'Kursat',
         avatarFlexible: true,
         date: new Date(),
       }
