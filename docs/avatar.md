@@ -58,7 +58,7 @@ import { Avatar } from "react-chat-elements"
 ## Avatar Props
 
 | prop             | default | type       | description                                                                                     |
-| ---------------- | ------- | ---------- | ----------------------------------------------------------------------------------------------- |
+|------------------|---------|------------|-------------------------------------------------------------------------------------------------|
 | src              | none    | image      | image src                                                                                       |
 | alt              | none    | string     | image alt description                                                                           |
 | size             | default | string     | image size. default (25px), xsmall(30px), small(35px), medium(40px), large(45px), xlarge (55px) |
@@ -67,3 +67,4 @@ import { Avatar } from "react-chat-elements"
 | sideElement      | none    | component  | avatar side element                                                                             |
 | onError          | none    | component  | avatar img onerror                                                                              |
 | lazyLoadingImage | none    | image path | lazy loading image                                                                              |
+| className        | none    | string     | className for optional Avatar                                                                   |                                                                             |
