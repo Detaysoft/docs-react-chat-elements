@@ -15,6 +15,7 @@ Use the navbar component by giving components to the left, right, center section
     left=<div>'LEFT' AREA</div>
     center=<div>'CENTER' AREA</div>
     right=<div>'RIGHT' AREA</div>
+    type="dark"
   />
 </div>
 
