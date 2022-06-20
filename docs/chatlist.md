@@ -72,11 +72,19 @@ import { ChatList } from "react-chat-elements"
 
 ## ChatList Props
 
-| prop             | default | type       | description                                               |
-| ---------------- | ------- | ---------- | --------------------------------------------------------- |
-| className        | none    | string     | optional chat list className                              |
-| dataSource       | []      | array      | chat list array                                           |
-| onClick          | none    | function   | chat list item on click (chat(object) is returned)        |
-| onContextMenu    | none    | function   | chat list item on context menu (chat(object) is returned) |
-| onAvatarError    | none    | function   | chat list item on error avatar img                        |
-| lazyLoadingImage | none    | image path | lazy loading image                                        |
+|       prop       | default |       type       |                      description                      |
+|----------------|-------|----------------|-----------------------------------------------------|
+| id               | none    | string \| number | Chatlist id                                           |
+| className        | none    | string           | optional chat list className                          |
+| dataSource       | []      | array            | chat list array                                       |
+| onClick          | none    | function         | chat list item on click (chat(object) returns)        |
+| onContextMenu    | none    | function         | chat list item on context menu (chat(object) returns) |
+| onAvatarError    | none    | function         | chat list item on error avatar img                    |
+| lazyLoadingImage | none    | string           | lazy loading image path                               |
+| onClickMute      | none    | function         | mute click function (chat(object) returns)            |
+| onClickVideoCall | none    | function         | video call click function (chat(object) returns)      |
+| onDragOver       | none    | function         | ondragover event                                      |
+| onDragEnter      | none    | function         | ondragenter event                                     |
+| onDrop           | none    | function         | ondrop event                                          |
+| onDragLeave      | none    | function         | ondragleave event                                     |
+| onDragComponent  | none    | function         | the component which showing while drag                |
