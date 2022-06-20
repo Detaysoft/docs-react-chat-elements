@@ -13,6 +13,8 @@ Create an item that specifies meeting calls.
 <div style={{ color:"black", margin:"50px 0px"}}>
   <MeetingItem
     subject={"New Calling !"}
+    subjectLimit={20}
+    date={new Date()}
     avatars={[
       { src: "https://avatars.githubusercontent.com/u/80540635?v=4", },
       { src: "https://avatars.githubusercontent.com/u/15075759?v=4", },
@@ -29,8 +31,11 @@ Create an item that specifies meeting calls.
 import { MeetingItem } from "react-chat-elements"
 
 <MeetingItem
-  subject={"About Tomorrow !"}
+  subject={"New Calling !"}
+  subjectLimit={10}
+  date={new Date()}
   avatars={[
+    { src: "https://avatars.githubusercontent.com/u/80540635?v=4", },
     { src: "https://avatars.githubusercontent.com/u/15075759?v=4", },
     { src: "https://avatars.githubusercontent.com/u/41473129?v=4", },
   ]}
@@ -43,8 +48,11 @@ import { MeetingItem } from "react-chat-elements"
 
 <div style={{ color:"black"}}>
   <MeetingItem
-    subject={"About Tomorrow !"}
+    subject={"New Calling !"}
+    subjectLimit={10}
+    date={new Date()}
     avatars={[
+      { src: "https://avatars.githubusercontent.com/u/80540635?v=4", },
       { src: "https://avatars.githubusercontent.com/u/15075759?v=4", },
       { src: "https://avatars.githubusercontent.com/u/41473129?v=4", },
     ]}
@@ -55,19 +63,25 @@ import { MeetingItem } from "react-chat-elements"
 
 ## Meeting Item Props
 
-| prop             | default | type       | description                                               |
-| ---------------- | ------- | ---------- | --------------------------------------------------------- |
-| subject          | none    | string     | MeetingItem subject                                       |
-| subjectLimit     | 60      | int        | MeetingItem subject text limit                            |
-| date             | none    | date       | MeetingItem date                                          |
-| dateString       | none    | string     | MeetingItem represents dateString or timeagojs(now, date) |
-| lazyLoadingImage | none    | image path | lazy loading image                                        |
-| closable         | true    | boolean    | MeetingItem closable                                      |
-| onClick          | none    | function   | MeetingItem on click                                      |
-| onMeetingClick   | none    | function   | MeetingItem on meeting click                              |
-| onShareClick     | none    | function   | MeetingItem on share click                                |
-| onCloseClick     | none    | function   | MeetingItem on close click                                |
-| avatars          | none    | date       | MeetingItem avatars                                       |
-| avatarLimit      | 5       | date       | MeetingItem avatars limit                                 |
-| audioMuted       | true    | boolean    | MeetingItem audio muted                                   |
-| audioSource      | null    | string     | MeetingItem audio source                                  |
+|       prop       | default |   type   |                    description                    |
+|------------------|---------|----------|---------------------------------------------------|
+| subject          | none    | string   | The Meeting Item's subject and optional.          |
+| subjectLimit     | 60      | int      | The Meeting Item's subject limit and optional.    |
+| date             | none    | date     | The Meeting Item's date and optional.             |
+| dateString       | none    | string   | The Meeting Item's date string and optional.      |
+| lazyLoadingImage | none    | string   | lazy loading image (image path)                   |
+| closable         | true    | boolean  | The Meeting Item's closable and optional.         |
+| onClick          | none    | function | MeetingItem on click                              |
+| onMeetingClick   | none    | function | MeetingItem on meeting click                      |
+| onShareClick     | none    | function | MeetingItem on share click                        |
+| onCloseClick     | none    | function | MeetingItem on close click                        |
+| avatars          | none    | date     | MeetingItem avatars                               |
+| avatarFlexible   | none    | boolean  | The Meeting Item's avatar flexible and optional.  |
+| avatarLimit      | 5       | date     | MeetingItem avatars limit                         |
+| audioMuted       | true    | boolean  | MeetingItem audio muted                           |
+| audioSource      | null    | string   | MeetingItem audio source                          |
+| alt              | none    | string   | The Meeting Item's alt and optional.              |
+| statusColorType  | none    | string   | The Meeting Item's status color type and optional |
+| className        | none    | string   | className for optional MeetingItem                |
+| onAvatarError    | none    | function | onerror event for Avatar (img)                    |
+| onContextMenu    | none    | function | MeetingItem on context menu                       |
