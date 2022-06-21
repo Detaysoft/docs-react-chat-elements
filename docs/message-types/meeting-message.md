@@ -15,7 +15,7 @@ Message announcing the meetings can be defined.
     subject="BNet Department"
     title="Detaysoft Daily"
     date={new Date()}
-    dateString={props.messageItem?.dateString}
+    dateString={new Date().toDateString}
     collapseTitle="Info"
     participants= {
       [
@@ -62,7 +62,7 @@ import { MeetingMessage } from "react-chat-elements";
   subject="Example Meeting Message"
   title="Meeting Message"
   date={new Date()}
-  dateString={props.messageItem?.dateString}
+  dateString={new Date().toDateString}
   collapseTitle="Info"
   participants={
     [
@@ -106,7 +106,7 @@ import { MeetingMessage } from "react-chat-elements";
     subject="Example Meeting Message"
     title="Meeting Message"
     date={new Date()}
-    dateString={props.messageItem?.dateString}
+    dateString={new Date().toDateString}
     collapseTitle="Info"
     participants={
       [
@@ -146,16 +146,17 @@ import { MeetingMessage } from "react-chat-elements";
 ## Meeting Message Props
 
 | prop                    | default    | type     | description                                                                                        |
-| ----------------------- | ---------- | -------- | -------------------------------------------------------------------------------------------------- |
+|-------------------------|------------|----------|----------------------------------------------------------------------------------------------------|
 | subject                 | none       | string   | Meeting messagee                                                                                   |
 | title                   | none       | string   | Meeting title                                                                                      |
 | date                    | new Date() | Date     | Meeting date                                                                                       |
+| dateString              | none       | string   | Meeting date string                                                                                |
 | collapseTitle           | none       | string   | Meeting subtitle                                                                                   |
 | participants            | []         | array    | Meeting participant array                                                                          |
+| participantsLimit       | none       | number   | Meeting participants count limit                                                                   |
 | moreItems               | none       | array    | message more items                                                                                 |
 | dataSource              | []         | array    | meeting list array                                                                                 |
 | onClick                 | none       | function | meeting message on click event (message(object) is returned)                                       |
 | onMeetingTitleClick     | none       | function | meeting title message on click event (message(object) is returned)                                 |
 | onMeetingVideoLinkClick | none       | function | meeting video link message on click event (message(object) is returned)                            |
 | onMeetingMoreSelect     | none       | function | message list item onMeetingMoreSelect event, gets 3 parameters: message item, index of item, event |
-
