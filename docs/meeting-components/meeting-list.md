@@ -17,6 +17,7 @@ If you need the MeetingItem list, you can use the MeetingList component.
       {
         id: '1',
         subject: 'Need Help !',
+        subjectLimit: 20,
         date: new Date(),
         avatars: [{
             src: 'https://avatars.githubusercontent.com/u/80540635?v=4',
@@ -25,6 +26,7 @@ If you need the MeetingItem list, you can use the MeetingList component.
       {
         id: '1',
         subject: 'Daily',
+        subjectLimit: 20,
         date: new Date(),
         avatars: [
           {
@@ -50,6 +52,7 @@ import { MeetingList } from "react-chat-elements"
     {
       id: '1',
       subject: 'Calling',
+      subjectLimit: 10,
       date: new Date(),
       avatars: [{
           src: 'https://avatars.githubusercontent.com/u/80540635?v=4',
@@ -58,6 +61,7 @@ import { MeetingList } from "react-chat-elements"
     {
       id: '1',
       subject: 'Calling',
+      subjectLimit: 10,
       date: new Date(),
       avatars: [
         {
@@ -77,7 +81,17 @@ import { MeetingList } from "react-chat-elements"
     dataSource={[
       {
         id: '1',
-        subject: "Emre's Calling",
+        subject: 'Calling',
+        subjectLimit: 10,
+        date: new Date(),
+        avatars: [{
+            src: 'https://avatars.githubusercontent.com/u/80540635?v=4',
+        }]
+      },
+      {
+        id: '1',
+        subject: 'Calling',
+        subjectLimit: 10,
         date: new Date(),
         avatars: [
           {
@@ -85,24 +99,16 @@ import { MeetingList } from "react-chat-elements"
           },
         ]
       },
-      {
-        id: '1',
-        subject: "Kursat's Calling",
-        date: new Date(),
-        avatars: [{
-            src: 'https://avatars.githubusercontent.com/u/80540635?v=4',
-        }]
-      },
     ]}
   />
 </div>
 
 ## Meeting List Props
 
-
 | prop             | default | type       | description                                                      |
-| ---------------- | ------- | ---------- | ---------------------------------------------------------------- |
+|------------------|---------|------------|------------------------------------------------------------------|
 | className        | none    | string     | optional meeting list className                                  |
+| cmpRef           | none    | ref object | meeting list ref                                                 |
 | dataSource       | []      | array      | meeting list array                                               |
 | onClick          | none    | function   | meeting list item on click (meeting(object) is returned)         |
 | onMeetingClick   | none    | function   | meeting list item on meeting click (meeting(object) is returned) |
