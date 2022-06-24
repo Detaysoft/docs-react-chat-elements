@@ -152,11 +152,63 @@ import { MeetingMessage } from "react-chat-elements";
 | date                    | new Date() | Date     | Meeting date                                                                                       |
 | dateString              | none       | string   | Meeting date string                                                                                |
 | collapseTitle           | none       | string   | Meeting subtitle                                                                                   |
-| participants            | []         | array    | Meeting participant array                                                                          |
+| participants            | []         | array    | Meeting participants array (see details below)   |
 | participantsLimit       | none       | number   | Meeting participants count limit                                                                   |
-| moreItems               | none       | array    | message more items                                                                                 |
-| dataSource              | []         | array    | meeting list array                                                                                 |
+| moreItems               | none       | array    | message more items (see details below)                                                                                |
+| dataSource              | []         | array    | meeting list array         (see details below)                                                                           |
 | onClick                 | none       | function | meeting message on click event (message(object) is returned)                                       |
 | onMeetingTitleClick     | none       | function | meeting title message on click event (message(object) is returned)                                 |
 | onMeetingVideoLinkClick | none       | function | meeting video link message on click event (message(object) is returned)                            |
 | onMeetingMoreSelect     | none       | function | message list item onMeetingMoreSelect event, gets 3 parameters: message item, index of item, event |
+
+### MeetingMessage participants Props
+
+| prop  | default | type             | description       |
+|-------|---------|------------------|-------------------|
+| id    | none    | number \| string | participant id    |
+| title | none    | string           | participant title |
+
+### MeetingMessage moreItems Props
+
+| prop | default | type   | description                                      |
+|------|---------|--------|--------------------------------------------------|
+| text | none    | string | MeetingMessage (dropdown) text                     |
+| icon | none    | object | MeetingMessage (dropdown) icon (see details below) |
+
+### MeetingMessage (Dropdown) Items Icon Props
+
+| prop      | default | type       | description                 |
+|-----------|---------|------------|-----------------------------|
+| float     | none    | string     | icon style float            |
+| color     | none    | string     | icon color                  |
+| size      | 12      | number     | font size                   |
+| component | none    | ReactChild | icon component              |
+
+### MeetingMessage dataSource Props
+
+| prop       | default | type           | description                                      |
+|------------|---------|----------------|--------------------------------------------------|
+| message    | none    | string         | MeetingMessage message of data                   |
+| avatar     | none    | string         | MeetingMessage avatar                            |
+| date       | none    | number \| Date | MeetingMessage date                              |
+| dateString | none    | string         | MeetingMessage dateString                        |
+| title      | none    | string         | MeetingMessage title                             |
+| event      | none    | object         | MeetingMessage event object (see details below)  |
+| record     | none    | object         | MeetingMessage record object (see details below) |
+
+### MeetingMessage dataSource event Props
+
+| prop         | default | type   | description                              |
+|--------------|---------|--------|------------------------------------------|
+| title        | none    | string | event title                              |
+| avatars      | none    | array  | Avatar component props (see Avatar docs) |
+| avatarsLimit | none    | any    | event avatarsLimit                       |
+
+### MeetingMessage dataSource record Props
+
+| prop    | default | type   | description        |
+|---------|---------|--------|--------------------|
+| avatar  | none    | string | record avatar path |
+| title   | none    | string | record title       |
+| savedBy | none    | string | record savedBy     |
+| time    | none    | string | record time        |
