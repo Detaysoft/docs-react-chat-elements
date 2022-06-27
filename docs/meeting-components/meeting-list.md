@@ -109,7 +109,7 @@ import { MeetingList } from "react-chat-elements"
 |------------------|---------|------------|------------------------------------------------------------------|
 | className        | none    | string     | optional meeting list className                                  |
 | cmpRef           | none    | ref object | meeting list ref                                                 |
-|[dataSource](/docs/meeting-components/meeting-list#meeting-list-datasource-props )      | []      | array      | meeting list array (see details below)                                              |
+|[dataSource](/docs/meeting-components/meeting-list#meeting-list-datasource-meetingitem-props)      | []      | array      | meeting list array (see details below)                                              |
 | onClick          | none    | function   | meeting list item on click (meeting(object) is returned)         |
 | onMeetingClick   | none    | function   | meeting list item on meeting click (meeting(object) is returned) |
 | onShareClick     | none    | function   | meeting list item on share click (meeting(object) is returned)   |

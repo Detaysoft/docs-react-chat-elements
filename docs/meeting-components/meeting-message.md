@@ -152,10 +152,10 @@ import { MeetingMessage } from "react-chat-elements";
 | date                    | new Date() | Date     | Meeting date                                                                                       |
 | dateString              | none       | string   | Meeting date string                                                                                |
 | collapseTitle           | none       | string   | Meeting subtitle                                                                                   |
-| participants            | []         | array    | Meeting participants array (see details below)   |
+| [participants](/docs/meeting-components/meeting-message#meetingmessage-participants-props)             | []         | array    | Meeting participants array (see details below)   |
 | participantsLimit       | none       | number   | Meeting participants count limit                                                                   |
-| moreItems               | none       | array    | message more items (see details below)                                                                                |
-| dataSource              | []         | array    | meeting list array         (see details below)                                                                           |
+| [moreItems](/docs/meeting-components/meeting-message#meetingmessage-moreitems-props)               | none       | array    | message more items (see details below)                                                                                |
+| [dataSource](/docs/meeting-components/meeting-message#meetingmessage-datasource-props)               | []         | array    | meeting list array         (see details below)                                                                           |
 | onClick                 | none       | function | meeting message on click event (message(object) is returned)                                       |
 | onMeetingTitleClick     | none       | function | meeting title message on click event (message(object) is returned)                                 |
 | onMeetingVideoLinkClick | none       | function | meeting video link message on click event (message(object) is returned)                            |
@@ -173,7 +173,7 @@ import { MeetingMessage } from "react-chat-elements";
 | prop | default | type   | description                                      |
 |------|---------|--------|--------------------------------------------------|
 | text | none    | string | MeetingMessage (dropdown) text                     |
-| icon | none    | object | MeetingMessage (dropdown) icon (see details below) |
+| [icon](/docs/meeting-components/meeting-message#meetingmessage-dropdown-items-icon-props) | none    | object | MeetingMessage (dropdown) icon (see details below) |
 
 ### MeetingMessage (Dropdown) Items Icon Props
 
@@ -193,8 +193,8 @@ import { MeetingMessage } from "react-chat-elements";
 | date       | none    | number \| Date | MeetingMessage date                              |
 | dateString | none    | string         | MeetingMessage dateString                        |
 | title      | none    | string         | MeetingMessage title                             |
-| event      | none    | object         | MeetingMessage event object (see details below)  |
-| record     | none    | object         | MeetingMessage record object (see details below) |
+| [event](/docs/meeting-components/meeting-message#meetingmessage-datasource-event-props)      | none    | object         | MeetingMessage event object (see details below)  |
+| [record](/docs/meeting-components/meeting-message#meetingmessage-datasource-record-props)     | none    | object         | MeetingMessage record object (see details below) |
 
 ### MeetingMessage dataSource event Props
 
