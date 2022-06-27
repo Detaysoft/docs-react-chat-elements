@@ -5,6 +5,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import 'react-chat-elements/dist/main.css'
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();

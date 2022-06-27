@@ -12,12 +12,8 @@ MeetingLink component can be use for sending meeting links. On the other hand ca
 
 <div style={{ color:"black", margin:"50px 0px"}}>
   <MeetingLink
-    message={
-      {
-        title:"This is a meeting link for tomorrow's event.",
-        meetingID:"5"
-      }
-    }
+    text="This is a meeting link for tomorrow's event."
+    meetingID="1"
   />
 </div>
 
@@ -45,12 +41,9 @@ import { MessageBox } from "react-chat-elements"
 import { MeetingLink } from "react-chat-elements"
 
 <MeetingLink
-  message={
-    {
-      title:"This is a meeting link for tomorrow's event.",
-      meetingID:"5"
-    }
-  }
+  onMeetingLinkClick={() => alert("clicked !")}
+  text="This is a meeting link for tomorrow's event."
+  meetingID="1"
 />
 ```
 
@@ -58,25 +51,16 @@ import { MeetingLink } from "react-chat-elements"
 
 <div style={{ color:"black"}}>
   <MeetingLink
-    message={
-      {
-        title:"This is a meeting link for tomorrow's event.",
-        meetingID:"5"
-      }
-    }
+    onMeetingLinkClick={() => alert("clicked !")}
+    text="This is a meeting link for tomorrow's event."
+    meetingID="1"
   />
 </div>
 
 ## Meeting Link Props
 
-| prop                | default | type     | description                                  |
-|---------------------|---------|----------|----------------------------------------------|
-| message             | none    | object   | MeetingLink message data (see details below) |
-| onMeetingMoreSelect | none    | function | link click function (returns meeting id)     |
-
-### Meeting Link Message Props
-
-| prop               | default | type     | description                 |
-| ------------------ | ------- | -------- | --------------------------- |
-| meetingID          | none    | string   | Meeting Link id             |
-| title              | none    | string   | Meeting Link title          |
+| prop               | default | type     | description              |
+|--------------------|---------|----------|--------------------------|
+| meetingID          | none    | string   | meeting link meeting id  |
+| text               | none    | string   | meeting link text        |
+| onMeetingLinkClick | none    | function | meeting link click event |
