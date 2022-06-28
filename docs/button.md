@@ -2,7 +2,9 @@
 sidebar_position: 7
 custom_edit_url: null
 ---
+
 import { Button } from "react-chat-elements"
+import IconExample from "../src/components/ComponentExample.js"
 
 # Button
 
@@ -17,21 +19,43 @@ May need to button component in chat apps. It can be define very easily.
 ## Example Usage
 
 ```jsx
-import { Button } from "react-chat-elements"
+import { Button } from "react-chat-elements";
 
-<Button text={"Send"} onClick={() => alert("Sending...")} />
+
+<Button text={"Send"} onClick={() => alert("Sending...")} title="Send" />;
+<Button text={"Send"} onClick={() => alert("Sending...")} type='transparent' title="Send" />;
+<Button
+  text={"Send"}
+  onClick={() => alert("Sending...")}
+  title="Send"
+  icon ={
+    float:'left',
+    size:15,
+    component:<IconExample/>
+  }/>
 ```
 
 **Result**
 
-<div style={{ color:"black"}}>
-  <Button text={"Send"} onClick={() => alert("Sending...")} />
+<div style={{ color:"black", display:'flex' ,flexDirection:'row' , alignItems:'center' , justifyContent:'space-evenly'}}>
+  <Button text={"Send"} onClick={() => alert("Sending...")} title="Send" />
+  <Button text={"TransperantButton"} onClick={() => alert("Sending...")} type='transparent' color='#3979aa' title="TransparentButton" />
+  <Button 
+    text={"Send"} 
+    onClick={() => alert("Sending...")} 
+    title="Send"
+    icon = {{
+      component : <IconExample/>,
+      float:'left',
+      size:12
+    }}
+ />
 </div>
 
 ## Button Props
 
 | prop            | default | type     | description                                            |
-|-----------------|---------|----------|--------------------------------------------------------|
+| --------------- | ------- | -------- | ------------------------------------------------------ |
 | type            | none    | string   | button type (outlined, transparent)                    |
 | disabled        | none    | string   | button is disabled ?                                   |
 | text            | none    | string   | button text                                            |
@@ -46,7 +70,7 @@ import { Button } from "react-chat-elements"
 ### Button Icon Props
 
 | prop      | default | type       | description      |
-|-----------|---------|------------|------------------|
+| --------- | ------- | ---------- | ---------------- | --- |
 | float     | none    | string     | span float       |
 | size      | 12      | number     | font size number |
-| component | none    | ReactChild | icon component   |
+| component | none    | ReactChild | icon component   | c   |

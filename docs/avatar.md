@@ -2,6 +2,7 @@
 sidebar_position: 12
 custom_edit_url: null
 ---
+
 import { Avatar } from "react-chat-elements"
 
 # Avatar
@@ -34,14 +35,14 @@ Create beautiful designs using the avatar component.
 ## Example Usage
 
 ```jsx
-import { Avatar } from "react-chat-elements"
+import { Avatar } from "react-chat-elements";
 
 <Avatar
   src="https://avatars.githubusercontent.com/u/80540635?v=4"
   alt="avatar"
   size="xlarge"
   type="rounded"
-/>
+/>;
 ```
 
 **Result**
@@ -58,7 +59,7 @@ import { Avatar } from "react-chat-elements"
 ## Avatar Props
 
 | prop             | default | type       | description                                                                                     |
-|------------------|---------|------------|-------------------------------------------------------------------------------------------------|
+| ---------------- | ------- | ---------- | ----------------------------------------------------------------------------------------------- | --- |
 | src              | none    | image      | image src                                                                                       |
 | alt              | none    | string     | image alt description                                                                           |
 | size             | default | string     | image size. default (25px), xsmall(30px), small(35px), medium(40px), large(45px), xlarge (55px) |
@@ -67,4 +68,4 @@ import { Avatar } from "react-chat-elements"
 | sideElement      | none    | component  | avatar side element                                                                             |
 | onError          | none    | component  | avatar img onerror                                                                              |
 | lazyLoadingImage | none    | image path | lazy loading image                                                                              |
-| className        | none    | string     | className for optional Avatar                                                                   |                                                                             |
+| className        | none    | string     | className for optional Avatar                                                                   |     |

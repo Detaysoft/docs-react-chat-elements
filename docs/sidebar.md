@@ -2,6 +2,7 @@
 sidebar_position: 9
 custom_edit_url: null
 ---
+
 import SidebarComp from '../src/components/SidebarComp.js'
 
 # Sidebar
@@ -40,9 +41,15 @@ const SidebarData = {
 
 ## Sidebar Props
 
-| prop   | default | type      | description                          |
-| ------ | ------- | --------- | ------------------------------------ |
-| type   | light   | string    | sidebar style type (eg: light, dark) |
-| top    | none    | component | sidebar top component                |
-| center | none    | component | sidebar center component             |
-| bottom | none    | component | sidebar bottom component             |
+| prop | default | type   | description                         |
+| ---: | ------- | ------ | ----------------------------------- |
+| type | light   | string | sidebar style type (eg: light,dark) |
+| data | none    | object | sidebar data object                 |
+
+### Sidebar data Props
+
+|   prop | default | type   | description              |
+| -----: | ------- | ------ | ------------------------ |
+|    top | none    | string | sidebar top component    |
+| center | none    | string | sidebar center component |
+| bottom | none    | string | sidebar bottom component |
