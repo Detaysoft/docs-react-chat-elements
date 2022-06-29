@@ -75,7 +75,7 @@ import { MeetingItem } from "react-chat-elements"
 | onMeetingClick   | none    | function | MeetingItem on meeting click                      |
 | onShareClick     | none    | function | MeetingItem on share click                        |
 | onCloseClick     | none    | function | MeetingItem on close click                        |
-| avatars          | none    | date     | MeetingItem avatars                               |
+| [avatars](/docs/meeting-components/meeting-item#meeting-item-avatar-props)          | none    | array     | MeetingItem avatars array (see details below)                               |
 | avatarFlexible   | none    | boolean  | The Meeting Item's avatar flexible and optional.  |
 | avatarLimit      | 5       | date     | MeetingItem avatars limit                         |
 | audioMuted       | true    | boolean  | MeetingItem audio muted                           |
@@ -85,3 +85,22 @@ import { MeetingItem } from "react-chat-elements"
 | className        | none    | string   | className for optional MeetingItem                |
 | onAvatarError    | none    | function | onerror event for Avatar (img)                    |
 | onContextMenu    | none    | function | MeetingItem on context menu                       |
+
+
+### Meeting Item avatars Props
+
+| prop            | default | type   | description                                         |
+|-----------------|---------|--------|-----------------------------------------------------|
+| src             | none    | string | meeting item avatar img src                         |
+| alt             | none    | string | meeting item avatar img alt                         |
+| statusColorType | none    | string | meeting item avatar status color type               |
+| statusColor     | none    | string | meeting item avatar status color                    |
+| [letterItem](/docs/meeting-components/meeting-item#meeting-item-avatar-letteritem-props)      | none    | object | meeting item avatar letter item (see details below) |
+| statusText      | none    | string | meeting item avatar status text                     |
+
+### Meeting Item avatar letterItem props
+
+| prop            | default | type   | description                                         |
+|-----------------|---------|--------|-----------------------------------------------------|
+| id             | none    | string | meeting item avatar letterItem id                         |
+| letter             | none    | ReactChild | meeting item avatar letterItem letter                        |
