@@ -2,7 +2,7 @@
 sidebar_position: 9
 custom_edit_url: null
 ---
-import { MeetingMessage } from 'react-chat-elements'
+import { MeetingMessage, MessageBox } from 'react-chat-elements'
 
 # Meeting Message
 
@@ -103,6 +103,99 @@ import { MeetingMessage } from "react-chat-elements";
 
 <div style={{ color:"black"}}>
   <MeetingMessage
+    subject="Example Meeting Message"
+    title="Meeting Message"
+    date={new Date()}
+    dateString={new Date().toDateString}
+    collapseTitle="Info"
+    participants={
+      [
+        {
+          id: '1',
+          title: 'Esra'
+        },
+        {
+          id: '2',
+          title: 'Abdurrahman'
+        },
+      ]
+    }
+    dataSource={
+      [
+        {
+          id: '1',
+          avatar: 'https://avatars.githubusercontent.com/u/53093667?s=100&v=4',
+          message: "Frontend Developer",
+          title: 'Esra',
+          avatarFlexible: true,
+          date: new Date(),
+        },
+        {
+          id: '1',
+          avatar: 'https://avatars.githubusercontent.com/u/15075759?v=4',
+          message: "Solution Architect",
+          title: 'Abdurrahman',
+          avatarFlexible: true,
+          date: new Date(),
+        }
+      ]
+    }
+  />
+</div>
+
+
+## Meeting Message with Message Box
+
+```jsx
+import { MessageBox } from "react-chat-elements";
+
+<MessageBox
+  type="meeting"
+  subject="Example Meeting Message"
+  title="Meeting Message"
+  date={new Date()}
+  dateString={new Date().toDateString}
+  collapseTitle="Info"
+  participants={
+    [
+      {
+        id: '1',
+        title: 'Esra'
+      },
+      {
+        id: '2',
+        title: 'Abdurrahman'
+      },
+    ]
+  }
+  dataSource={
+    [
+      {
+        id: '1',
+        avatar: 'https://avatars.githubusercontent.com/u/53093667?s=100&v=4',
+        message: "Frontend Developer",
+        title: 'Esra',
+        avatarFlexible: true,
+        date: new Date(),
+      },
+      {
+        id: '1',
+        avatar: 'https://avatars.githubusercontent.com/u/15075759?v=4',
+        message: "Solution Architect",
+        title: 'Abdurrahman',
+        avatarFlexible: true,
+        date: new Date(),
+      }
+    ]
+  }
+/>
+```
+
+**Result**
+
+<div style={{ color:"black"}}>
+  <MessageBox
+    type="meeting"
     subject="Example Meeting Message"
     title="Meeting Message"
     date={new Date()}
