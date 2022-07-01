@@ -52,3 +52,4 @@ import { SystemMessage } from "react-chat-elements"
 | prop | default | type   | description  |
 | ---- | ------- | ------ | ------------ |
 | text | none    | string | message text |
+| className | none    | string | System message className |
