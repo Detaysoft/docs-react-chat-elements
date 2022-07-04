@@ -60,6 +60,35 @@ import { MessageBox } from "react-chat-elements";
   }}
 />
 
+
+## Location Message Props
+
+### ILocationMessageProps (extends ILocationMessage)
+
+| props       | default | type     | description                             |
+|-------------|---------|----------|-----------------------------------------|
+| markerColor | none    | string   | location message marker color           |
+| zoom        | none    | string   | location message zoom                   |
+| apiKey      | none    | string   | location message apiKey                 |
+| className   | none    | string   | className for optional location message |
+| src         | none    | string   | location message src                    |
+| target      | none    | string   | location message target                 |
+| href        | none    | string   | location message href                   |
+| onOpen      | none    | function | location message onOpen event (onClick) |
+| onError     | none    | function | location message (img) onError event    |
+
+
+### ILocationMessage (extends IMessage)
+
+| props     | default | type   | description                                             |
+|-----------|---------|--------|---------------------------------------------------------|
+| data      | none    | object | contains latitude, longitude, staticURL, mapURL (below) |
+| latitude  | none    | string | latitude must be in data object                         |
+| longitude | none    | string | longitude must be in data object                        |
+| staticURL | none    | string | staticURL must be in data object                        |
+| mapURL    | none    | string | mapURL must be in data object (optional)                |
+
+
 ## MessageBox Props
 
 
