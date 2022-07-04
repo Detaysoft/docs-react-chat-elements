@@ -53,6 +53,25 @@ import { MessageBox } from "react-chat-elements";
     }}
   />
 
+
+## Audio Message Props
+
+### IAudioMessageProps [(extends IAudioMessage)](/docs/message-types/audio-message#iaudiomessage-extends-imessage)
+
+| props       | default | type   | description               |
+|-------------|---------|--------|---------------------------|
+| audioProps  | none    | object | [key: string]: unknown    |
+| customStyle | none    | -      | audio message customStyle |
+
+### IAudioMessage (extends IMessage)
+
+| props        | default | type                  | description                                        |
+|--------------|---------|-----------------------|----------------------------------------------------|
+| data         | none    | object                | contains audioURL, audioType, controlsList (below) |
+| audioURL     | none    | string                | audioURL must be in data object (optional)         |
+| audioType    | none    | 'audio/mp3' \| string | audioType must be in data object (optional)        |
+| controlsList | none    | string                | controlsList must be in data object (optional)     |
+
 ## MessageBox Props
 
 
