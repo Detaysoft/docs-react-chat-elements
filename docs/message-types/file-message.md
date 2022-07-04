@@ -68,6 +68,29 @@ import { MessageBox } from "react-chat-elements";
   }}
 />
 
+
+## File Message Props
+
+### IFileMessageProps [(extends IFileMessage)](/docs/message-types/file-message#ifilemessage-extends-imessage)
+
+| props      | default | type     | description                         |
+|------------|---------|----------|-------------------------------------|
+| onDownload | none    | function | file message onDownload function    |
+| onOpen     | none    | function | file message onOpen event (onClick) |
+
+
+### IFileMessage (extends IMessage)
+
+| props     | default | type   | description                                                                                                                                                              |
+|-----------|---------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| data      | none    | object | contains name, extension, size, id, uri, status (below)                                                                                                                  |
+| name      | none    | string | name must be in data object (optional)                                                                                                                                   |
+| extension | none    | string | extension must be in data object (optional)                                                                                                                              |
+| size      | none    | string | size must be in data object (optional)                                                                                                                                   |
+| id        | none    | string | id must be in data object (optional)                                                                                                                                     |
+| uri       | none    | string | uri must be in data object (optional)                                                                                                                                    |
+| status    | none    | object | status must be in data object (optional) and contains autoDownload:boolean, error:boolean,  download:Function\|boolean, click:Function\|boolean, loading:boolean\|number |
+
 ## MessageBox Props
 
 
