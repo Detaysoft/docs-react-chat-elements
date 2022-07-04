@@ -8,11 +8,9 @@ import { MessageBox } from "react-chat-elements";
 
 ## Message Box
 
-:::tip Message Box
+:::tip Message Box - Reply Status
 
-It is enough to define a message component with using "MessageBox".
-
-However you have to specify type for them.
+Reply message can be use with given "reply" property at any time in your Message Box components.
 
 :::
 

@@ -146,6 +146,14 @@ import { MeetingMessage } from "react-chat-elements";
 
 ## Meeting Message with Message Box
 
+:::tip Message Box
+
+It is enough to define a message component with using "MessageBox".
+
+However you have to specify type for them.
+
+:::
+
 ```jsx
 import { MessageBox } from "react-chat-elements";
 
