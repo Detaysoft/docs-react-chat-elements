@@ -62,7 +62,7 @@ import { MessageBox } from "react-chat-elements"
 </div>
 
 
-## Text Message Props (extends IMessage)
+## Text Message Props [(extends IMessage)](/docs/message-types/text-message#imessage-props)
 
 ### IMessage Props
 
