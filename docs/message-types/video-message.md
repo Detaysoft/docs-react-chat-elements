@@ -68,6 +68,31 @@ import { MessageBox } from "react-chat-elements"
   }}
 />
 
+
+## Video Message Props
+
+### IVideoMessageProps (extends IVideoMessage)
+
+| props      | default | type     | description                                  |
+|------------|---------|----------|----------------------------------------------|
+| onDownload | none    | function | video message onDownload function (optional) |
+| onOpen     | none    | function | video message onOpen event (onClick)         |
+| onLoad     | none    | function | video message onLoad event                   |
+| onError    | none    | function | video message onError event                  |
+
+### IVideoMessage (extends IMessage)
+
+| props        | default | type   | description                                                                                                                                                              |
+|--------------|---------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| controlsList | none    | string | video message controls list                                                                                                                                              |
+| data         | none    | object | contains videoURL, width, height, alt, uri, status (below)                                                                                                               |
+| videoURL     | none    | string | videoURL must be in data object (optional)                                                                                                                               |
+| width        | none    | number | width must be in data object (optional)                                                                                                                                  |
+| height       | none    | number | height must be in data object (optional)                                                                                                                                 |
+| alt          | none    | string | alt must be in data object (optional)                                                                                                                                    |
+| uri          | none    | string | uri must be in data object (optional)                                                                                                                                    |
+| status       | none    | object | status must be in data object (optional) and contains autoDownload:boolean, error:boolean,  download:Function\|boolean, click:Function\|boolean, loading:boolean\|number |
+
 ## MessageBox Props
 
 
