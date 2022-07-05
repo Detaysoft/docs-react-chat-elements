@@ -77,8 +77,8 @@ import { MessageBox } from "react-chat-elements"
 |------------|---------|----------|----------------------------------------------|
 | onDownload | none    | function | video message onDownload function (optional) |
 | onOpen     | none    | function | video message onOpen event (onClick)         |
-| onLoad     | none    | function | video message onLoad event                   |
-| onError    | none    | function | video message onError event                  |
+| onLoad     | none    | function | video message onLoad event  (img)                 |
+| onPhotoError    | none    | function | video message onPhotoError event (img)                 |
 
 ### IVideoMessage (extends IMessage)
 
