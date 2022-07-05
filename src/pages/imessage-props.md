@@ -1,70 +1,10 @@
 ---
-sidebar_position: 1
-custom_edit_url: null
+title: IMessage Props
 ---
-import { MessageBox } from "react-chat-elements";
-
-# Text Message
-
-## Message Box
-
-:::tip Message Box
-
-It is enough to define a message component with using "MessageBox".
-
-However you have to specify type for them.
-
-:::
-
-<div style={{ color:"black", margin:"50px 0px"}}>
-  <MessageBox
-    position={"left"}
-    type={"text"}
-    title={"Emre"}
-    text="Hi there !"
-  />
-  <MessageBox
-    position={"left"}
-    type={"text"}
-    title={"Esra"}
-    text="Hii !"
-  />
-  <MessageBox
-    position={"right"}
-    type={"text"}
-    title={"Kursat"}
-    text="Heyy ! How are you ?"
-  />
-</div>
-
-## Example Usage
-
-```jsx
-import { MessageBox } from "react-chat-elements"
-
-<MessageBox
-  position={"left"}
-  type={"text"}
-  title={"Message Box Title"}
-  text="Here is a text type message box"
-/>
-```
-
-**Result**
-
-<div style={{ color:"black"}}>
-  <MessageBox
-    position={"left"}
-    type={"text"}
-    title={"Message Box Title"}
-    text="Here is a text type message box"
-  />
-</div>
 
 
-## Text Message Props (extends IMessage)
+# IMessage Props
 
-### IMessage Props
 
 | props        | default | type                                       | description                                                                            |
 |--------------|---------|--------------------------------------------|----------------------------------------------------------------------------------------|
