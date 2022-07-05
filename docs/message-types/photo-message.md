@@ -61,6 +61,28 @@ import { MessageBox } from "react-chat-elements"
   }}
 />
 
+## Photo Message Props
+
+### IPhotoMessageProps (extends IPhotoMessage)
+
+| props        | default | type     | description                                    |
+|--------------|---------|----------|------------------------------------------------|
+| onDownload   | none    | function | photo message onDownload function (optional)   |
+| onOpen       | none    | function | photo message onOpen function (optional)       |
+| onLoad       | none    | function | photo message onLoad function (optional)       |
+| onPhotoError | none    | function | photo message onPhotoError function (optional) |
+
+### IPhotoMessage (extends IMessage)
+
+| props  | default | type   | description                                                                                                                                                    |
+|--------|---------|--------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| data   | none    | object | contains uri, width, height, alt, status                                                                                                                       |
+| uri    | none    | string | uri must be in data object                                                                                                                                     |
+| width  | none    | number | width must be in data object                                                                                                                                   |
+| height | none    | number | height must be in data object                                                                                                                                  |
+| alt    | none    | string | alt must be in data object                                                                                                                                     |
+| status | none    | object | status must be in data object and contains autoDownload:boolean,  error:boolean, download:Function\|boolean, click:Function\|boolean,  loading:boolean\|number |
+
 ## MessageBox Props
 
 
