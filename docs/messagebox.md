@@ -43,23 +43,24 @@ import { MessageBox } from "react-chat-elements";
 ```
 
 **Result**
+<div style={{ color:"black" }}>
+  <MessageBox
+    position='left'
+    title='Burhan'
+    type='text'
+    text="Hi there !"
+    date={new Date()}
+    replyButton={true}
+  />
 
-<MessageBox
-position='left'
-title='Burhan'
-type='text'
-text="Hi there !"
-date={new Date()}
-replyButton={true}
-/>
-
-<MessageBox
-position="right"
-title="Emre"
-type="meetingLink"
-text="Click to join the meeting"
-date={new Date()}
-/>
+  <MessageBox
+    position="right"
+    title="Emre"
+    type="meetingLink"
+    text="Click to join the meeting"
+    date={new Date()}
+  />
+</div>
 
 ## MessageBox Props
 
