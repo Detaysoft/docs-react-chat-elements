@@ -1,7 +1,8 @@
 ---
-sidebar_position: 12
+sidebar_position: 13
 custom_edit_url: null
 ---
+
 import { Avatar } from "react-chat-elements"
 
 # Avatar
@@ -34,14 +35,14 @@ Create beautiful designs using the avatar component.
 ## Example Usage
 
 ```jsx
-import { Avatar } from "react-chat-elements"
+import { Avatar } from "react-chat-elements";
 
 <Avatar
   src="https://avatars.githubusercontent.com/u/80540635?v=4"
   alt="avatar"
   size="xlarge"
   type="rounded"
-/>
+/>;
 ```
 
 **Result**
@@ -67,3 +68,4 @@ import { Avatar } from "react-chat-elements"
 | sideElement      | none    | component  | avatar side element                                                                             |
 | onError          | none    | component  | avatar img onerror                                                                              |
 | lazyLoadingImage | none    | image path | lazy loading image                                                                              |
+| className        | none    | string     | className for optional Avatar                                                                   

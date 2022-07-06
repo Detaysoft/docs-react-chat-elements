@@ -68,45 +68,52 @@ import { MessageBox } from "react-chat-elements"
   }}
 />
 
-## MessageBox Props
 
+## Video Message Props
 
-| prop                    | default    | type                 | description                                                                                        |
-| ----------------------- | ---------- | -------------------- | -------------------------------------------------------------------------------------------------- |
-| id                      | i (index)  | string               | message box id                                                                                     |
-| position                | left       | string               | message box position                                                                               |
-| type                    | text       | string               | message type (text, photo, file, location, spotify, video, audio)                                  |
-| text                    | none       | string               | message text                                                                                       |
-| title                   | none       | string               | message title                                                                                      |
-| titleColor              | none       | string(color)        | message title color                                                                                |
-| data                    | {}         | object               | message data                                                                                       |
-| date                    | new Date() | Date                 | message date                                                                                       |
-| dateString              | none       | string               | message represents dateString or timeagojs(now, date)                                              |
-| onClick                 | none       | function             | message on click (message(object) is returned)                                                     |
-| onOpen                  | none       | function             | message on open (file or photo) (message(object) is returned)                                      |
-| onDownload              | none       | function             | message on download (file or photo) (message(object) is returned)                                  |
-| onLoad                  | none       | function             | message on load photo                                                                              |
-| onPhotoError            | none       | function             | message on error photo                                                                             |
-| onTitleClick            | none       | function             | message title on click event                                                                       |
-| onForwardClick          | none       | function             | message forward on click event                                                                     |
-| onReplyClick            | none       | function             | message reply on click event                                                                       |
-| onMeetingMessageClick   | none       | function             | meeting message on click event                                                                     |
-| onMeetingTitleClick     | none       | function             | meeting title message on click event                                                               |
-| onMeetingVideoLinkClick | none       | function             | meeting video link message on click event                                                          |
-| onReplyMessageClick     | none       | function             | reply message on click event                                                                       |
-| onRemoveMessageClick    | none       | function             | message remove on click event                                                                      |
-| onMeetingMoreSelect     | none       | function             | message list item onMeetingMoreSelect event, gets 3 parameters: message item, index of item, event |
-| onMeetingLinkClick      | none       | function             | meeting link on click event                                                                        |
-| onContextMenu           | none       | function             | message contextmenu click event                                                                    |
-| forwarded               | none       | boolean              | message forward icon                                                                               |
-| replyButton             | none       | boolean              | message reply icon                                                                                 |
-| removeButton            | none       | boolean              | message remove icon                                                                                |
-| status                  | none       | string               | message status info (waiting, sent, received, read)                                                |
-| notch                   | true       | boolean              | message box notch                                                                                  |
-| avatar                  | none       | url                  | message box avatar url                                                                             |
-| renderAddCmp            | none       | function (component) | adding custom components to message box                                                            |
-| copiableDate            | false      | boolean              | message box date text copiable                                                                     |
-| focus                   | false      | boolean              | used in message focus feature in MessageList component, makes style of the component focused       |
-| onMessageFocused        | none       | function             | makes focus value false after the message becomes focus                                            |
-| reply                   | none       | object               | reply data                                                                                         |
-| retracted               | none       | boolean              | message deleted or retracted                                                                       |
+### IVideoMessageProps [(extends IVideoMessage)](/docs/message-types/video-message#ivideomessage-extends-imessage)
+
+| props      | default | type     | description                                  |
+|------------|---------|----------|----------------------------------------------|
+| onDownload | none    | function | video message onDownload function (optional) |
+| onOpen     | none    | function | video message onOpen event (onClick)         |
+| onLoad     | none    | function | video message onLoad event  (img)                 |
+| onPhotoError    | none    | function | video message onPhotoError event (img)                 |
+
+### IVideoMessage [(extends IMessage)](/docs/message-types/video-message#imessage-props)
+
+| props        | default | type   | description                                                                                                                                                              |
+|--------------|---------|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| controlsList | none    | string | video message controls list                                                                                                                                              |
+| data         | none    | object | contains videoURL, width, height, alt, uri, status (below)                                                                                                               |
+| videoURL     | none    | string | videoURL must be in data object (optional)                                                                                                                               |
+| width        | none    | number | width must be in data object (optional)                                                                                                                                  |
+| height       | none    | number | height must be in data object (optional)                                                                                                                                 |
+| alt          | none    | string | alt must be in data object (optional)                                                                                                                                    |
+| uri          | none    | string | uri must be in data object (optional)                                                                                                                                    |
+| status       | none    | object | status must be in data object (optional) and contains autoDownload:boolean, error:boolean,  download:Function\|boolean, click:Function\|boolean, loading:boolean\|number |
+
+## IMessage Props
+
+| props        | default | type                                       | description                                                                            |
+|--------------|---------|--------------------------------------------|----------------------------------------------------------------------------------------|
+| id           | none    | string \| number                           | message id                                                                             |
+| position     | none    | string                                     | message position                                                                       |
+| text         | none    | string                                     | message text                                                                           |
+| title        | none    | string                                     | message title                                                                          |
+| focus        | none    | boolean                                    | message focus                                                                          |
+| date         | none    | number \| Date                             | message date                                                                           |
+| dateString   | none    | string                                     | message date string                                                                    |
+| avatar       | none    | string                                     | message avatar                                                                         |
+| titleColor   | none    | string                                     | message title color                                                                    |
+| forwarded    | none    | boolean                                    | message forwarded                                                                      |
+| replyButton  | none    | boolean                                    | message reply button                                                                   |
+| removeButton | none    | boolean                                    | message remove button                                                                  |
+| status       | none    | 'waiting'\| 'sent' \| 'received' \| 'read' | message status                                                                         |
+| notch        | none    | boolean                                    | message notch                                                                          |
+| copiableDate | none    | boolean                                    | message copiable date                                                                  |
+| retracted    | none    | boolean                                    | message retracted                                                                      |
+| className    | none    | string                                     | message className                                                                      |
+| letterItem   | none    | object                                     | message letterItem contains id:string, letter:ReactChild                               |
+| reply        | none    | object \| any                              | message reply should be both any and object (contains message:string, photoURL:string) |
+| type         | none    | string                                     | message type                                                                           |

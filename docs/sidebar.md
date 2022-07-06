@@ -1,8 +1,9 @@
 ---
-sidebar_position: 9
+sidebar_position: 10
 custom_edit_url: null
 ---
-import { SideBar } from "react-chat-elements"
+
+import SidebarComp from '../src/components/SidebarComp.js'
 
 # Sidebar
 
@@ -11,12 +12,7 @@ import { SideBar } from "react-chat-elements"
 Use the sidebar component by giving components to the top, bottom, center sections separately.
 
 <div style={{ color:"black", margin:"50px 0px"}}>
-  <SideBar
-    top=<div>'TOP' AREA</div>
-    center=<div>'CENTER' AREA</div>
-    bottom=<div>'BOTTOM' AREA</div>
-    type="light"
-  />
+  <SidebarComp type="dark" isSecondData={false}/>
 </div>
 
 ## Example Usage
@@ -24,44 +20,36 @@ Use the sidebar component by giving components to the top, bottom, center sectio
 ```jsx
 import { SideBar } from "react-chat-elements"
 
-<SideBar
-  top=<div>About Me</div>
-  center=<div>Chat List</div>
-  bottom=<div>Detaysoft</div>
-  type="light"
-/>
+const SidebarData = {
+  top: "About Me",
+  center: "Chat List",
+  bottom: "Detaysoft",
+}
+
+<SideBar type="light" data={SidebarData} />
 <br />
-<SideBar
-  top=<div>About Me</div>
-  center=<div>Chat List</div>
-  bottom=<div>Detaysoft</div>
-  type="dark"
-/>
+<SideBar type="dark" data={SidebarData} />
 ```
 
 **Result**
 
-<div style={{ color:"black"}}>
-  <SideBar
-    top=<div>About Me</div>
-    center=<div>Chat List</div>
-    bottom=<div>Detaysoft</div>
-    type="light"
-  />
-  <br />
-  <SideBar
-    top=<div>About Me</div>
-    center=<div>Chat List</div>
-    bottom=<div>Detaysoft</div>
-    type="dark"
-  />
+<div style={{ color:"black", margin:"50px 0px"}}>
+<SidebarComp type="dark" isSecondData={true}/>
+<br />
+<SidebarComp type="light" isSecondData={true}/>
 </div>
 
 ## Sidebar Props
 
-| prop   | default | type      | description                          |
-| ------ | ------- | --------- | ------------------------------------ |
-| type   | light   | string    | sidebar style type (eg: light, dark) |
-| top    | none    | component | sidebar top component                |
-| center | none    | component | sidebar center component             |
-| bottom | none    | component | sidebar bottom component             |
+| prop | default | type   | description                         |
+| ---: | ------- | ------ | ----------------------------------- |
+| type | light   | string | sidebar style type (eg: light,dark) |
+| data | none    | object | sidebar data object                 |
+
+### Sidebar data Props
+
+|   prop | default | type   | description              |
+| -----: | ------- | ------ | ------------------------ |
+|    top | none    | string | sidebar top component    |
+| center | none    | string | sidebar center component |
+| bottom | none    | string | sidebar bottom component |
