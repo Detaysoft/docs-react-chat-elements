@@ -126,13 +126,13 @@ import { MessageList } from "react-chat-elements"
 
 | type        | props details              |
 |-------------|----------------------------|
-| text        | Text Message Props         |
-| location    | Location Message Props     |
-| photo       | Photo Message Props        |
-| video       | Video Message Props        |
-| meeting     | Meeting Message Props      |
-| system      | System Message Props       |
-| file        | File Message Props         |
-| meetingLink | Meeting Link Message Props |
-| audio       | Audio Message Props        |
-| spotify     | Spotify Message Props      |
+| text        | [Text Message Props](/docs/message-types/text-message#text-message-props-extends-imessage)         |
+| location    | [Location Message Props](/docs/message-types/location-message#location-message-props)     |
+| photo       | [Photo Message Props](/docs/message-types/photo-message#photo-message-props)        |
+| video       | [Video Message Props](/docs/message-types/video-message#video-message-props)        |
+| meeting     | [Meeting Message Props](/docs/message-types/meeting-message#meeting-message-props-extends-imessage)      |
+| system      | [System Message Props](/docs/message-types/system-message#system-message-props-extends-imessage)       |
+| file        | [File Message Props](/docs/message-types/file-message#file-message-props)         |
+| meetingLink | [Meeting Link Message Props](/docs/meeting-components/meeting-link#meeting-link-props) |
+| audio       | [Audio Message Props](/docs/message-types/audio-message#audio-message-props)        |
+| spotify     | [Spotify Message Props](/docs/message-types/spotify-message#spotifymessage-props-extends-imessage)      |
