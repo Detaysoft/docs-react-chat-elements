@@ -14,7 +14,7 @@ Input component should be used to write a message.
   <Input
     className="inputStyle"
     placeholder="Type here..."
-    multiline={true}
+    multiline={false}
     rightButtons={<Button color="white" backgroundColor="black" text="Send" onClick={() => alert("Sending...")} />}
   />
 </div>
