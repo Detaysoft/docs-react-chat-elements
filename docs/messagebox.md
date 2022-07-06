@@ -9,7 +9,7 @@ import { MessageBox } from "react-chat-elements"
 
 ## Message Box Component
 
-<div >
+<div style={{ color:"black", margin:"50px 0px"}}>
   <MessageBox
     position='left'
     title='Emre'
