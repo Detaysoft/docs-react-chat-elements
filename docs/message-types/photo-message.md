@@ -100,6 +100,7 @@ import { MessageBox } from "react-chat-elements"
 | replyButton  | none    | boolean                                    | message reply button                                                                   |
 | removeButton | none    | boolean                                    | message remove button                                                                  |
 | status       | none    | 'waiting'\| 'sent' \| 'received' \| 'read' | message status                                                                         |
+| statusTitle  | none    | string                                     | message status title                                                                     |
 | notch        | none    | boolean                                    | message notch                                                                          |
 | copiableDate | none    | boolean                                    | message copiable date                                                                  |
 | retracted    | none    | boolean                                    | message retracted                                                                      |
